@@ -7,6 +7,28 @@
     <title>Axios Assignment</title>
 </head>
 <body>
+    <div>
+        <!-- Have a button that when clicked, will show the user a new random activity to try (done with JS) -->
+        <h3>Random Activity Button</h3>
+        <button id="randomActivity">Get Random Activity</button>
+        <p id="randomActContainer">Click Button and See your activity!</p>
+    </div>
+
+    <form action="javascript:void(0)">
+        <!-- Have a dropdown menu that presents the user with 4 options, 
+            the numbers 1,2,3,4 
+            and a button next to it that when clicked will show the 
+            user an activity to do based on the amount of 
+            participants they have selected.  
+        -->
+        Number of Participants: <select name="subject" id="subject">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <input type="submit" value="See Activity">
+    </form>
     
     <script src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'></script>
     <script src="js/app.js"></script>
