@@ -28,14 +28,18 @@
                 user an activity to do based on the amount of 
                 participants they have selected.  
             -->
-            Number of Participants: <select name="subject" id="subject">
+            Number of Participants: <select name="participants" id="selector">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
             </select>
-            <input type="submit" value="See Activity">
+            <input type="submit" value="See Activity" id="submitNumButton">
         </form>
+
+        <div>
+            <h4 id="participantActivityContainer">Your Activity: Click Button to See activity!</h4>
+        </div>
     </main>
     
     <script src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'></script>
